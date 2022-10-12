@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Formatação</title>
+
+    <style>
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de texto HTML5</h1>
+
+    <h2>Semântico e Forma</h2>
+    <p>O uso das tags em HTML5 tem um uso semântico, as tags tem um significados para os conteúdos, diferente do HTML4 algumas tags que funcionava como forma do html4 foram obsoletos, por motivo de ser usado como forma não semântico(com significados).</p>
+
+    <h2>Negrito / Destaque</h2>
+    <p>As tags que deixam a letras em <b>negritos</b> como &lt;b&gt;,&lt;/b&gt; é usado como forma, por isso não semântico e não são recomendados para uso, as tags recomendadas semântico são as tags <strong>Destaque</strong> &lt;strong&gt;,&lt;/strong&gt;.</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Outra tags que também deixaram de ser usado por motivo de não ser semântico foram as tags &lt;i&gt;, &lt;/i&gt; para deixar textos <i>itálicos</i>, o jeito recomendado para uso é as tags <q>Ênfase</q> &lt;em&gt;, &lt;/em&gt;.</p>
+
+    <h2>Texto marcado</h2>
+    <p>Para marcar uma frase ou palara é utilizado tag &lt;mark&gt;<mark>texto marcado</mark>&lt;/mark&gt; e para podemos configurarmos utilizamos a ferramenta CSS para alterar a cor em outras palavras mudar a forma, que seria a sua principal caracteristica.</p>
+
+    <h2>Codigo-fonte / PRE-Formatação</h2>
+    <p>A tag codigo fonte é representado pela tag 'code' e pra deixar pre formatado é usado a tag 'pre' exemplo.:</p>
+
+    <pre>
+    <code>
+        package pessoas;
+
+        public class Pessoa{
+
+            String nome;
+            int idade;
+
+            public static void main(String [] args){
+
+                Pessoa p1 = new Pessoa("Edson", "22");
+
+                System.out.println(p1.getPessoa);
+
+            }
+
+            Pessoa(String nome, int idade) {
+                this.nome = nome;
+                this.idade = idade;
+            }
+
+        }
+    </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo <q>o computador é um burro que aprende muito rápido</q></p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble no seu livro HTML para leigos</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quibusdam, quaerat reiciendis doloremque minima cum accusamus deserunt tempore omnis suscipit soluta pariatur tenetur, deleniti fugiat ipsam vel quidem! Optio, veritatis.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estundando <abbr title="Hyper Text markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    
+
+    <h2>Lista Ordenadas</h2>
+    <ol type="1" start="1"> <!--1 a A i I-->
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+        <li>Quatro</li>
+        <li>Cinco</li>
+    </ol>
+
+    <h2>Lista não Ordenadas</h2>
+    <ul type = 'square'> <!--disc circle square-->
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+        <li>Quatro</li>
+        <li>Cinco</li>
+    </ul>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>Exemplo 1</dt>
+        <dd>Mostrando como funciona das lsta de definições</dd>
+        <dt>Exemplo 2</dt>
+        <dd>Mostrando outra lista de definição</dd>
+        <dt>Exemplo 3</dt>
+        <dd>Por fim é assim que funciona as lista.</dd>
+    </dl>
+</body>
+</html>
